@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,35 +14,120 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="clone" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
-                                <rect key="frame" x="0.0" y="202" width="375" height="43"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by React Native" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="MN2-I3-ftu">
-                                <rect key="frame" x="0.0" y="626" width="375" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="fi8-NW-TyB">
+                                <rect key="frame" x="80.000000000000014" y="424" width="211.33333333333337" height="111"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fi8-NW-TyB" secondAttribute="height" multiplier="246:161" id="7T6-VS-QxB"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="63" id="HA3-hO-prB"/>
+                                    <constraint firstAttribute="width" constant="64" id="LYw-WE-3Kk"/>
+                                    <constraint firstAttribute="width" secondItem="fi8-NW-TyB" secondAttribute="height" multiplier="8:9" id="N3c-Ny-zCG"/>
+                                    <constraint firstAttribute="height" constant="72" id="OWd-Ls-BXE"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="111" id="Pc2-rx-ZAU"/>
+                                    <constraint firstAttribute="width" secondItem="fi8-NW-TyB" secondAttribute="height" multiplier="98:111" id="VDt-JD-n67"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="46" id="VWy-RV-rQv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="63" id="dtb-X7-ji1"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="30" id="gJT-dy-y2n"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="47" id="gkD-UM-wCS"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="gkY-jP-4v2"/>
+                                    <constraint firstAttribute="width" secondItem="fi8-NW-TyB" secondAttribute="height" multiplier="59:31" id="m0u-5X-9w0"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="57" id="qzU-7e-8bz"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="zNU-Mf-NSD"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="zoU-ag-t4b"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="MN2-I3-ftu" secondAttribute="bottom" constant="20" id="OZV-Vh-mqD"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="Q3B-4B-g5h"/>
-                            <constraint firstItem="MN2-I3-ftu" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="akx-eg-2ui"/>
-                            <constraint firstItem="MN2-I3-ftu" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="i1E-0Y-4RG"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="bottom" multiplier="1/3" constant="1" id="moa-c2-u7t"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="x7j-FC-K8j"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="333" id="0dB-QZ-x8n"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="400" id="0kD-nu-qUL"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="196" id="2hQ-wm-7e5"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="80" id="2nq-vG-QQ5"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="118" id="36h-qG-3Zc"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="116" id="3Rp-Dd-qfY"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="365" id="45K-Uw-S9Q"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="113" id="4cX-BJ-fdE"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="365" id="4ga-jT-2rm"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="321" id="5YI-gq-w2e"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="390" id="5kb-Jx-HyW"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="349" id="6dJ-Qy-dZu"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="189" id="7E6-Ti-G1t"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="160" id="7Rq-wm-8Ft"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="324" id="921-gz-nFd"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="118" id="9XF-Gh-Owb"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="365" id="9qG-jL-KIX"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" id="AH1-dT-0qq"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="104.33" id="Ak7-6N-1zH"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="298" id="Az8-Xv-Oc4"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="183" id="C5X-HF-FvE"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="319" id="Cgc-zG-2fx"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="113" id="D1Q-rS-K0B"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="176" id="DK2-tD-cHN"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="134" id="DaW-Ta-AkB"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="320" id="EZl-5j-JKK"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="192" id="EuH-wu-TmS"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="294" id="FGP-RU-v92"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="65" id="Fuo-sQ-sdg"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="327" id="Gm6-NK-Wjj"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="340" id="HV4-0q-nbL"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="352" id="IJJ-Pa-F8y"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="7" id="Lus-aa-nL2"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="117" id="NaG-hn-cBV"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="113" id="NnO-hI-cJj"/>
+                            <constraint firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="-38" id="PF5-o8-oJz"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="352" id="PNa-sz-GSe"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="192" id="PPk-Mj-CWP"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="196" id="PzT-Q0-wil"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="189" id="QBX-PV-DCK"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="152" id="QI6-37-bxi"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="356" id="QNE-YZ-i27"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="326" id="QR7-fP-9g9"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="113" id="QYe-80-XRd"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="402" id="QnS-dl-frk"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="183" id="RVh-nd-YfK"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="329" id="SLA-2h-jiP"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="274" id="Tad-6d-ltt"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="333" id="Tpf-lD-5Au"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="335" id="VJ9-6e-i7b"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="320" id="WRt-2R-qxZ"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="320" id="Yx0-HF-D3T"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="73" id="aQg-Ez-dK1"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="1" id="ae6-68-fYI"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="384" id="atF-8r-nPk"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="fi8-NW-TyB" secondAttribute="bottom" constant="320" id="c0A-eu-ZDQ"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="305" id="cCN-Yx-DjD"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="113" id="g7e-fY-Dxs"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="113" id="gRi-GL-8xW"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="107" id="ido-Zf-5Mc"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="315" id="jTm-5V-0tI"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="160" id="jnf-Z6-giY"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="320" id="mRm-zI-nhI"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="113.67" id="mgI-rl-kf7"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="107" id="nBO-YN-hrs"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="80" id="nqA-mu-IH6"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="368" id="odb-nx-3wd"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="386" id="rfq-ho-Glu"/>
+                            <constraint firstItem="fi8-NW-TyB" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="365" id="stx-1T-HCG"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="145" id="w4Z-t5-n3Z"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="fi8-NW-TyB" secondAttribute="trailing" constant="109" id="zzZ-Ka-imo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="27.906976744186046" y="169.31330472103005"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image 1" width="184" height="138"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
